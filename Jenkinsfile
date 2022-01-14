@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label "aws1"
+        label "aws_node"
     }
     tools{
         maven 'mavenhome' 
