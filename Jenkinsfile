@@ -12,6 +12,12 @@ pipeline{
                 sh 'mvn test'
             }  
         }
+        stage("SonarQube"){
+            steps{
+             
+                sh 'mvn sonar:sonar'
+            }  
+        }
         stage("Build"){
             steps{
                 sh 'mvn package'
