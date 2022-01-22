@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label "aws_kishore_node"
+        label "aws_node"
     }
     tools{
         maven 'sbbMaven' 
