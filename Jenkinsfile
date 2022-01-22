@@ -1,9 +1,9 @@
 pipeline{
     agent{
-        label "aws_node"
+        label "aws_kishore_node"
     }
     tools{
-        maven 'mavenhome' 
+        maven 'sbbMaven' 
     }
     stages{
         stage("Test"){
